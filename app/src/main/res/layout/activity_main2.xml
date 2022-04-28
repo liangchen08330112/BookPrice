@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEDC8"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/logo" />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="30dp"
+            android:hint="图书名称"
+            android:background="@drawable/et_style"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="30dp"
+            android:hint="输入价格"
+            android:background="@drawable/et_style"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="30dp"
+            android:hint="输入库存"
+            android:background="@drawable/et_style"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:text="图书名称:  红楼梦
+图书价格： 11
+库存数量： 22\n
+图书名称:  哈利波特
+图书价格： 33
+库存数量： 44\n
+图书名称:  西游记
+图书价格： 55
+库存数量： 66"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="增加" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style2"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="查询" />
+
+            <Button
+                android:id="@+id/change"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style2"
+                android:text="修改" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
